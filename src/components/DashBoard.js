@@ -1,15 +1,24 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import swal from "sweetalert";
 import "../cssFiles/DashBoard.css";
 
 const DashBoard = ({ children }) => {
+  const navigate = useNavigate();
+  const logoutMethod = () => {
+    localStorage.removeItem("userDetails");
+    localStorage.removeItem("AuthToken");
+    navigate("/");
+    swal("Logged out", "", "success");
+  };
   return (
     <div>
-      <div class="nav">
+      <div className="nav">
         <input type="checkbox" id="nav-check" />
-        <div class="nav-header">
-          <div class="nav-title">Bee-Blogs 🐝</div>
+        <div className="nav-header">
+          <div className="nav-title">Bee-Blogs 🐝</div>
         </div>
-        <div class="nav-btn">
+        <div className="nav-btn">
           <label htmlFor="nav-check">
             <span></span>
             <span></span>
@@ -17,14 +26,24 @@ const DashBoard = ({ children }) => {
           </label>
         </div>
 
-        <div class="nav-links">
+        <div className="nav-links">
           <ul>
             <li>
-              <button className="btn btn-outline-info">Home</button>
+              <button
+                className="btn btn-outline-info"
+                onClick={() => navigate("/homepage")}
+              >
+                Home
+              </button>
             </li>
             ||
             <li>
-              <button className="btn btn-outline-info">Create Blog</button>
+              <button
+                className="btn btn-outline-info"
+                onClick={() => navigate("/createBlog")}
+              >
+                Create Blog
+              </button>
             </li>
             ||
             <li>
@@ -32,7 +51,12 @@ const DashBoard = ({ children }) => {
             </li>
             ||
             <li>
-              <button className="btn btn-outline-info">Logout</button>
+              <button
+                className="btn btn-outline-info"
+                onClick={() => logoutMethod()}
+              >
+                Logout
+              </button>
             </li>
             {/* ||
           <li>

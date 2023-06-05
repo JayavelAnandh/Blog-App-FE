@@ -1,0 +1,61 @@
+.createBlogPage {
+
+    margin-top: 3rem;
+    height: 85vh;
+}
+
+.createBlogPage .writeImg {
+    height: 30vh;
+    width: auto;
+}
+
+.createBlogPage .imgDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.createBlogPage form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.createBlogPage form .imageLabel {
+    border: 5px double black;
+    padding-left: 10px;
+    padding-right: 15px;
+    border-radius: 15px;
+    background-color: rgb(39, 167, 218);
+    color: white;
+    font-size: 20px;
+    cursor: po;
+}
+
+.createBlogPage form .titleInput {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.createBlogPage form .titleInput .writeInput {
+    border: 0px;
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+    width: 85%;
+    display: inline;
+    padding-left: 1%;
+}
+
+.createBlogPage form .titleInput button {
+    width: 10%;
+    display: inline;
+    margin-left: 1%;
+    border-width: 2px;
+    border-radius: 15px;
+}
+
+.createBlogPage form textarea {
+    height: 20vh;
+    margin-bottom: 2%;
+    padding-left: 1%;
+}

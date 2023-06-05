@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Authentication from "./pages/AuthenticationPage";
 import BlogsPage from "./pages/BlogsPage";
 import DashBoard from "./components/DashBoard";
+import CreateBlog from "./pages/CreateBlog";
 
 function App() {
   return (
@@ -14,6 +15,14 @@ function App() {
         element={
           <DashBoard>
             <BlogsPage />
+          </DashBoard>
+        }
+      />
+      <Route
+        path="/createBlog"
+        element={
+          <DashBoard>
+            <CreateBlog />
           </DashBoard>
         }
       />
