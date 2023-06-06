@@ -5,6 +5,7 @@ import Authentication from "./pages/AuthenticationPage";
 import BlogsPage from "./pages/BlogsPage";
 import DashBoard from "./components/DashBoard";
 import CreateBlog from "./pages/CreateBlog";
+import ReadBlog from "./pages/ReadBlog";
 
 function App() {
   return (
@@ -23,6 +24,14 @@ function App() {
         element={
           <DashBoard>
             <CreateBlog />
+          </DashBoard>
+        }
+      />
+      <Route
+        path="/viewBlog"
+        element={
+          <DashBoard>
+            <ReadBlog />
           </DashBoard>
         }
       />
