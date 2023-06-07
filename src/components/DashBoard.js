@@ -47,10 +47,6 @@ const DashBoard = ({ children }) => {
             </li>
             ||
             <li>
-              <button className="btn btn-outline-info">My Blogs</button>
-            </li>
-            ||
-            <li>
               <button
                 className="btn btn-outline-info"
                 onClick={() => logoutMethod()}

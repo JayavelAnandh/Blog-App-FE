@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -9,4 +13,9 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.justifyCenter {
+  display: flex;
+  justify-content: center;
 }

@@ -11,6 +11,13 @@
 
 }
 
+.BlogsPage .btnPlacement {
+    display: flex;
+    justify-content: end;
+    height: 6vh;
+    align-items: flex-end;
+}
+
 .BlogsPage .row .blogsMapped {
     height: 80vh;
 }
@@ -29,6 +36,7 @@
 
 .BlogsPage .row .blogsMapped .imageHolder .title {
     font-size: 28px;
+    font-family: 'Castoro Titling', cursive;
 }
 
 .BlogsPage .row .blogsMapped .imageHolder .time {
@@ -40,6 +48,7 @@
     height: 35%;
     overflow-y: scroll;
     border: 3px solid whitesmoke;
+    font-family: 'Playfair Display', serif;
 }
 
 .BlogsPage .row .blogsMapped .extra {
