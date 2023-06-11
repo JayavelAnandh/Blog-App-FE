@@ -204,15 +204,6 @@ const Authentication = () => {
               Already have an Account
               <span onClick={() => setLoginTrue(!loginTrue)}> Login ?</span>
             </p>
-            <p>
-              More
-              <a
-                href="https://github.com/JayavelAnandh/VCS-FrontEnd#readme"
-                style={{ color: "green", marginLeft: "7px" }}
-              >
-                Credentials
-              </a>
-            </p>
           </>
         )}
       </div>

@@ -6,9 +6,15 @@ const BlogsPage = () => {
   const userName = JSON.parse(localStorage.getItem("userDetails")).userName;
   const [blogs, setBlogs] = useState([]);
   const [btn, setBtn] = useState(false);
+  const [search, setSearch] = useState("");
+  const [searchBtn, setSearchBtn] = useState(false);
+
   const navigate = useNavigate();
   const retriveAllBlogs = async () => {
     let query;
+    if (search) {
+      query = `?userName=${search}`;
+    }
     if (btn) {
       query = `?userName=${userName}`;
     } else {
@@ -39,10 +45,29 @@ const BlogsPage = () => {
   return (
     <div className="container-fluid BlogsPage">
       <div className="btnPlacement">
+        <div className="searchAuthor">
+          <input
+            type="text"
+            value={search}
+            onChange={(event) => setSearch(event.target.value)}
+            placeholder="Search By Author"
+          />
+          <button
+            type="button"
+            className="btn btn-outline-success"
+            onClick={() => {
+              setBtn(false);
+              retriveAllBlogs();
+            }}
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
         <button
           className="btn"
           onClick={() => {
             setBtn(!btn);
+            setSearch("");
           }}
           style={{ backgroundColor: btn ? "green" : "skyblue" }}
         >

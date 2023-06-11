@@ -18,12 +18,33 @@
     align-items: flex-end;
 }
 
+.BlogsPage .btnPlacement .searchAuthor {
+    height: 37px;
+    display: flex;
+    margin-right: 3rem;
+}
+
+.BlogsPage .btnPlacement .searchAuthor input {
+    height: 100%;
+    border: 1px solid grey;
+    border-right: 0px;
+}
+
+.BlogsPage .btnPlacement .searchAuthor button {
+    height: 100%;
+    border-left: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
 .BlogsPage .row .blogsMapped {
-    height: 80vh;
+    max-height: 80vh;
+    min-height: 80vh;
 }
 
 .BlogsPage .row .blogsMapped img {
-    height: 50%;
+    max-height: 35vh;
+    min-height: 35vh;
     width: 90%;
     border-radius: 10px;
     overflow: scroll;
