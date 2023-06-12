@@ -130,15 +130,6 @@ const Authentication = () => {
                 Create account
               </span>
             </p>
-            <p>
-              More
-              <a
-                href="https://github.com/JayavelAnandh/VCS-FrontEnd#readme"
-                style={{ color: "green", marginLeft: "7px" }}
-              >
-                Credentials
-              </a>
-            </p>
           </>
         ) : (
           <>
