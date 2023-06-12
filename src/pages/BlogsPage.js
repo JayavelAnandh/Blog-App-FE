@@ -21,7 +21,7 @@ const BlogsPage = () => {
       query = "/";
     }
     try {
-      let res = await fetch(`http://localhost:5005/blog${query}`, {
+      let res = await fetch(`https://chronicles.onrender.com/blog${query}`, {
         method: "GET",
       });
       let response = await res.json();

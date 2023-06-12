@@ -52,7 +52,7 @@ const CreateBlog = () => {
     event.preventDefault();
     setLoading(true);
     try {
-      let res = await fetch("http://localhost:5005/blog/new", {
+      let res = await fetch("https://chronicles.onrender.com/blog/new", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

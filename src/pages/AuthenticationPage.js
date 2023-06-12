@@ -13,7 +13,7 @@ const Authentication = () => {
   const handleSubmit = async (event) => {
     try {
       event.preventDefault();
-      const res = await fetch("http://localhost:5005/user/login", {
+      const res = await fetch("https://chronicles.onrender.com/user/login", {
         method: "POST",
         body: JSON.stringify({
           gmail: email,
@@ -36,7 +36,7 @@ const Authentication = () => {
   const handleSignUp = async (event) => {
     event.preventDefault();
     try {
-      const res = await fetch("http://localhost:5005/user/signup", {
+      const res = await fetch("https://chronicles.onrender.com/user/signup", {
         method: "POST",
         body: JSON.stringify({
           userName,
