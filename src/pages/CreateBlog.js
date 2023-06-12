@@ -108,7 +108,7 @@ const CreateBlog = () => {
                 ) : (
                   <>
                     <i
-                      class="fa-solid fa-repeat"
+                      className="fa-solid fa-repeat"
                       style={{ marginRight: "8px" }}
                     ></i>
                     Replace the photo

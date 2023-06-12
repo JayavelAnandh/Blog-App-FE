@@ -114,8 +114,8 @@ const Authentication = () => {
                   className="buttons"
                   type="button"
                   onClick={(event) => {
-                    setEmail("JohnUser56@gmail.com");
-                    setPassword("veronica123");
+                    setEmail("guestUserCred@gmail.com");
+                    setPassword("guestCred");
                   }}
                 >
                   Guest user Credentials
