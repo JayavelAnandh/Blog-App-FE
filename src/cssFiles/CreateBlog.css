@@ -1,14 +1,10 @@
 .createBlogPage {
     padding-top: 3rem;
     height: 91vh;
-
+    background-color: rgb(248, 248, 248);
 }
 
-.fullCBpage {
-    background: url("https://e0.pxfuel.com/wallpapers/501/773/desktop-wallpaper-abstract-shapes-texture-digital-abstract-pattern.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
 .createBlogPage .writeImg {
     height: 30vh;
@@ -63,5 +59,8 @@
 .createBlogPage form textarea {
     height: 20vh;
     margin-bottom: 2%;
-    padding-left: 1%;
+    padding: 1%;
+    border: 3px solid rgb(78, 192, 237);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 7px whitesmoke;
 }
