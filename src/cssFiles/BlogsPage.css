@@ -2,6 +2,9 @@
     border: 1px solid;
     min-height: 90vh;
     overflow-y: scroll;
+    background: url("https://t3.ftcdn.net/jpg/02/98/77/98/360_F_298779829_ibEOUDbVsakvtZVH1vG0Mk0bt1FAoCNM.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .BlogsPage .row {
@@ -68,8 +71,12 @@
     overflow-y: hidden;
     height: 35%;
     overflow-y: scroll;
-    border: 3px solid whitesmoke;
+    border: 3px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+
     font-family: 'Playfair Display', serif;
+    background-color: whitesmoke;
 }
 
 .BlogsPage .row .blogsMapped .extra {

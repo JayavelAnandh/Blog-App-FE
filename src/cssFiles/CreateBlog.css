@@ -1,7 +1,13 @@
 .createBlogPage {
+    padding-top: 3rem;
+    height: 91vh;
 
-    margin-top: 3rem;
-    height: 85vh;
+}
+
+.fullCBpage {
+    background: url("https://e0.pxfuel.com/wallpapers/501/773/desktop-wallpaper-abstract-shapes-texture-digital-abstract-pattern.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .createBlogPage .writeImg {

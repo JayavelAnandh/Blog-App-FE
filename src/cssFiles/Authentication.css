@@ -49,6 +49,9 @@ form {
     justify-content: center;
     height: 100vh;
     align-items: center;
+    background: url("https://images.hdqwalls.com/wallpapers/dark-grey-abstract-shapes-4k-pi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .card h1 {
